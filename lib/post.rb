@@ -7,17 +7,17 @@ class Post
     @title = title
     @author = author
     @@all << self
-  end
+   end
+   
+   def self.all
+    @@all
+   end
 
    def author_name
     if self.author
-      self.author.name
+       self.author.name
     else
-      nil
-    end
-  end
-
-   def self.all
-    @@all
-  end
+       nil
+   end
+ end
 end 
